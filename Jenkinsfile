@@ -12,11 +12,17 @@ pipeline {
                 sh 'echo "For loop"'
                 sh '''
                     #!/bin/bash
-                    for char in {f..s}"
+                    for char in {f..s}
                     do
                         echo $char
                     done
                 ''' 
+            }
+        }
+        stage('Step 3') {
+            steps {
+                sh 'echo "curl apache"'
+                sh 'curl 192.068.56.31:80'
             }
         }
     }
