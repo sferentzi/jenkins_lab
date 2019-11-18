@@ -3,11 +3,8 @@ pipeline {
     stages {
         stage('Devops From github') {
             steps {
-                sh 'echo "This ijhgjhgs my first code for jenkins"'
-                sh '''
-                    echo "DevOpskkkk Rrrrrjhgjhgocks!"
-                    curl -v google.com
-                '''
+                sh 'echo "Ping google.com"'
+                sh 'ping google.com -c 5'
             }
         }
     }
