@@ -22,7 +22,7 @@ pipeline {
         stage('Step 3') {
             steps {
                 sh 'echo "curl apache"'
-                sh 'curl 192.068.56.31:80'
+                sh 'curl 192.168.56.31:80'
             }
         }
     }
