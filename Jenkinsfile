@@ -3,9 +3,9 @@ pipeline {
     stages {
         stage('Devops From github') {
             steps {
-                sh 'echo "This is my first code for jenkins"'
+                sh 'echo "This ijhgjhgs my first code for jenkins"'
                 sh '''
-                    echo "DevOps Rocks!"
+                    echo "DevOpskkkk Rrrrrjhgjhgocks!"
                     curl -v google.com
                 '''
             }
