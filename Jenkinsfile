@@ -11,6 +11,7 @@ pipeline {
             steps {
                 sh 'echo "For loop"'
                 sh '''
+                    #!/bin/bash
                     for char in {f..s}"
                     do
                         echo $char
