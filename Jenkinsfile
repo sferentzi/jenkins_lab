@@ -10,7 +10,12 @@ pipeline {
         stage('Step 2') {
             steps {
                 sh 'echo "For loop"'
-                sh 'ping google.com -c 5'
+                sh '''
+                    for char in {f..s}"
+                    do
+                        echo $char
+                    done
+                ''' 
             }
         }
     }
